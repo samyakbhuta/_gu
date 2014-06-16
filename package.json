@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/samyakbhuta/_gu",
   "dependencies": {
-    "unilities": "0.0.1"
+    "unilities": "0.0.2"
   }
 }
