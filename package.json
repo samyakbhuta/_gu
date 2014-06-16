@@ -1,6 +1,6 @@
 {
   "name": "unilities-gu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper library for Gujarati Unicode script block",
   "main": "_gu.js",
   "scripts": {
