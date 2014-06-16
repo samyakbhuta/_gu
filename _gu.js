@@ -23,6 +23,12 @@ var consonants = _gu.charcodes(2709,2728)	// [ક] to [ન]
 
 var digits = _gu.charcodes(2790,2799); // [૦] to [૯]
 
+var signs = _gu.charcodes(2689,2691)	// [ઁ] to [ઃ]
+		.concat( _gu.charcodes(2748,2749) ) // [઼] and [ઽ]
+		.concat( _gu.charcodes(2765,2765) ) // [્]
+		.concat( _gu.charcodes(2768,2768) ) // [ૐ]
+		.concat( _gu.charcodes(2800,2801) ) // [૰] and [૱]
+
 // Adds Gujarati IndependentVowels as subset
 _gu.addSubset( 'IndependentVowel', independentVowels );
 
@@ -37,6 +43,9 @@ _gu.addSubset( 'Consonant', consonants );
 
 // Adds Gujarati Digits as subset
 _gu.addSubset( 'Digit', digits );
+
+// Adds Gujarati Signs as subset
+_gu.addSubset( 'Sign', signs );
 
 // Returns the updated module
 module.exports = _gu;
