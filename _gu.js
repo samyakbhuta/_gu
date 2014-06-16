@@ -9,10 +9,10 @@ var independentVowels = _gu.charcodes(2693,2701) // [અ] to [ઍ]
 			.concat( _gu.charcodes(2707,2708) )  // [ઓ] and [ઔ]
 			.concat( _gu.charcodes(2784,2785) ); // [ૠ] and [ૡ]
 
-var dependentVowels = _gu.charcodes(2750,2757)
-			.concat( _gu.charcodes(2759,2761) )
-			.concat( _gu.charcodes(2763,2764) )
-			.concat( _gu.charcodes(2786,2787) );
+var dependentVowels = _gu.charcodes(2750,2757)   // [ા] to [ૅ]
+			.concat( _gu.charcodes(2759,2761) )  // [ે] to [ૉ]
+			.concat( _gu.charcodes(2763,2764) )  // [ો] and [ૌ]
+			.concat( _gu.charcodes(2786,2787) ); // [ૢ] and [ૣ]
 
 var vowels = independentVowels.concat(dependentVowels);
 
