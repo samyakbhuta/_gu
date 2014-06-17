@@ -29,6 +29,22 @@ var signs = _gu.charcodes(2689,2691)	// [ઁ] to [ઃ]
 		.concat( _gu.charcodes(2768,2768) ) // [ૐ]
 		.concat( _gu.charcodes(2800,2801) ) // [૰] and [૱]
 
+var reserved = _gu.charcodes(2692,2692)
+		.concat( _gu.charcodes(2702,2702) )
+		.concat( _gu.charcodes(2706,2706) )
+		.concat( _gu.charcodes(2729,2729) )
+		.concat( _gu.charcodes(2737,2737) )
+		.concat( _gu.charcodes(2740,2740) )
+		.concat( _gu.charcodes(2746,2747) )
+		.concat( _gu.charcodes(2758,2758) )
+		.concat( _gu.charcodes(2762,2762) )
+		.concat( _gu.charcodes(2766,2767) )
+		.concat( _gu.charcodes(2769,2783) )
+		.concat( _gu.charcodes(2788,2789) ); // Viram ( Danda and Double Danda)
+
+var unassigned = _gu.charcodes(2688,2688)
+		.concat( _gu.charcodes(2802,2815) );
+
 // Adds Gujarati IndependentVowels as subset
 _gu.addSubset( 'IndependentVowel', independentVowels );
 
@@ -46,6 +62,12 @@ _gu.addSubset( 'Digit', digits );
 
 // Adds Gujarati Signs as subset
 _gu.addSubset( 'Sign', signs );
+
+// Adds Gujarati reserved characters as subset
+_gu.addSubset( 'Reserved', reserved );
+
+// Adds Gujarati unassigned characters as subset
+_gu.addSubset( 'Unassigned', unassigned );
 
 // Returns the updated module
 module.exports = _gu;
